@@ -1,0 +1,7 @@
+script.
+	document.getElementsByClassName("jikopster")[0].addEventListener('mouseout', function(e) {
+		e = e || window.event
+		var target = e.target || e.srcElement
+		if (target.className == "b")
+			target.className += " round"
+	})
